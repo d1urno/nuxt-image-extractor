@@ -26,8 +26,17 @@ For example Drupal exports derivative images with a token like `itok=gmJP5AbR`, 
     [
       'nuxt-image-extractor',
       {
-    	baseUrl: /* CMS url */,
-    	tokenLength: /* Length of characters added at the end of the image url (default is 0) */,
+      	// (Required) CMS url
+    	baseUrl: process.env.BASE_URL,
+
+    	// (Optional) Dir where downloaded images will be stored
+    	path: '/_images',
+
+    	// (Optional) Number of characters added at the end of the image url
+    	tokenLength: 0, 
+
+    	// (Optional) Array containing image formats
+    	extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp', 'svg'],
       }
     ]
   ]
