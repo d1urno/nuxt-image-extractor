@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-image-extractor",
+  "version": "1.0.0",
+  "description": "Nuxt image extractor for full static generated sites",
+  "repository": "https://github.com/d1urno/nuxt-image-extractor",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Pablo Miceli <d1urno@gmx.com>"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "nuxtjs",
+    "nuxt",
+    "nuxt-module",
+    "image",
+    "static",
+    "extractor"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.vue .",
+    "release": "git push --follow-tags && npm publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "eslint": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
