@@ -18,7 +18,7 @@ yarn add nuxt-image-extractor # or npm install nuxt-image-extractor
 2. Add `nuxt-image-extractor` to the `modules` section of `nuxt.config.js`
 
 * If the CMS adds some token at the end of the image url you need to include `tokenLength` option.
-For example Drupal exports derivative images with a token like `itok=gmJP5AbR`, in that case add `tokenLength: 14`.
+For example Drupal exports derivative images with a token like `?itok=gmJP5AbR`, in that case add `tokenLength: 14`.
 
 ```js
 {
