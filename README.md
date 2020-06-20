@@ -9,7 +9,9 @@ This module is based on this [gist](https://gist.github.com/emiliobondioli/5ce8e
 
 It parses each generated page, downloads its images from your CMS API, stores them in a folder inside `/dist` and finally replace the HTML sources with the local paths.
 
-Adapted to support both `nuxt generate` and `nuxt export` commands.
+- Works with both `nuxt generate` and `nuxt export` commands.
+
+- Supports image url params like `?itok=gmJP5AbR`.
 
 ## Setup
 
@@ -20,9 +22,6 @@ yarn add nuxt-image-extractor # or npm install nuxt-image-extractor
 ```
 
 2. Add `nuxt-image-extractor` to the `modules` section of `nuxt.config.js`
-
-* If the CMS adds some token at the end of the image url you need to include `tokenLength` option.
-For example Drupal exports derivative images with a token like `?itok=gmJP5AbR`, in that case add `tokenLength: 14`.
 
 ```js
 {
@@ -36,9 +35,6 @@ For example Drupal exports derivative images with a token like `?itok=gmJP5AbR`,
     	// (Optional) Dir where downloaded images will be stored
     	path: '/_images',
 
-    	// (Optional) Number of characters added at the end of the image url
-    	tokenLength: 0, 
-
     	// (Optional) Array containing image formats
     	extensions: ['jpg', 'jpeg', 'gif', 'png', 'webp', 'svg'],
       }
@@ -50,8 +46,6 @@ For example Drupal exports derivative images with a token like `?itok=gmJP5AbR`,
 ## License
 
 [MIT License](./LICENSE)
-
-Credit goes to [emiliobondioli](https://github.com/emiliobondioli)
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-image-extractor/latest.svg
