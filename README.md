@@ -5,7 +5,11 @@
 
 > Nuxt image extractor for full static generated sites
 
-This module is based on this [gist](https://gist.github.com/emiliobondioli/5ce8ece783e7256fc7530738a2968ea9) from [emiliobondioli](https://github.com/emiliobondioli)
+This module is based on this [gist](https://gist.github.com/emiliobondioli/5ce8ece783e7256fc7530738a2968ea9) from [emiliobondioli](https://github.com/emiliobondioli). 
+
+It parses each generated page, downloads its images from your CMS API, stores them in a folder inside `/dist` and finally replace the HTML sources with the local paths.
+
+Adapted to support both `nuxt generate` and `nuxt export` commands.
 
 ## Setup
 
