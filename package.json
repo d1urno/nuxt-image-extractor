@@ -1,6 +1,6 @@
 {
   "name": "nuxt-image-extractor",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Nuxt image extractor for full static generated sites",
   "repository": "https://github.com/d1urno/nuxt-image-extractor",
   "license": "MIT",

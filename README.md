@@ -13,6 +13,8 @@ It parses each generated page, downloads its images from your CMS API, stores th
 
 - Supports image url params like `?itok=gmJP5AbR`.
 
+- It replaces payload image links as well, although this is not fully tested yet. So use with caution!
+
 ## Setup
 
 1. Add `nuxt-image-extractor` dependency to your project
